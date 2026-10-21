@@ -1,19 +1,32 @@
-package com.puralsight;
+package com.pluralsight;
 
+class CellPhoneService {
 
+    public static <Public> void main(String[] args) {
 
-public class cellphoneservice {
+        CellPhoneService phone = new CellPhoneService();
 
-    public static void main(String[] args) {
+        Public cellphone;{
+            phone.serialNumber = 0;
+            phone.model = "";
+            phone.carrier = "";
+            phone.phoneNumber = "";
+            phone.owner = "";
+        }
+        System.out.println("Serial Number: " + phone.serialNumber);
+        System.out.println("Model: " + phone.model);
+        System.out.println("Carrier: " + phone.carrier);
+        System.out.println("Phone Number: " + phone.phoneNumber);
+        System.out.println("Owner: " + phone.owner);
     }
 
-    String serialNumber = "0";
-    String model = "";
-    String Carrier = "";
-    String Phonenumber = "";
-    String owner = "";
-
-
-
+    int serialNumber;
+    String model;
+    String carrier;
+    String phoneNumber;
+    String owner;
 }
+
+
+
 
